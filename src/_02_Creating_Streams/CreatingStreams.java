@@ -24,13 +24,13 @@ public class CreatingStreams {
 		randStack.push(new Random());
 		randStack.push(new Random());
 		randStack.push(new Random());
-		Stream<String> randStm = (Stream<String>) randStack;
+		Stream<Random> randStm = randStack.stream();
 		
 		ArrayDeque<Double> dQueue = new ArrayDeque<Double>();
 		dQueue.push(0.0);
 		dQueue.push(1.0);
 		dQueue.push(2.0);
 		dQueue.push(3.0);
-		Stream<String> dStm = (Stream<String>) dQueue;
+		Stream<Double> dStm = dQueue.stream();
 	}
 }
