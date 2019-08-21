@@ -16,8 +16,8 @@ public class CreatingStreams {
 		intList.add(1);
 		intList.add(2);
 		intList.add(3);
-		intList.add(4);
-		Stream<String> intStm = (Stream<String>) intList;
+		intList.add(4); 
+		Stream<Integer> intStm = intList.stream();
 		
 		Stack<Random> randStack = new Stack<Random>();
 		randStack.push(new Random());
